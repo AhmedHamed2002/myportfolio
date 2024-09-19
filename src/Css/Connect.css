@@ -1,0 +1,15 @@
+.t-o{
+    color: rgb(213, 98, 5) !important;
+}
+.t-g{
+    color: green;
+}
+
+a ,span{
+    cursor: pointer;
+    transition: 1.2s;
+    
+    &:hover{
+        transform: scale(0.9);
+    }
+}

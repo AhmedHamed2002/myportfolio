@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.logo{
+    font-family: "Playwrite CU", system-ui;
+    font-size: 30px;
+    background:linear-gradient(to right , rgb(73, 130, 234) , rgb(56, 126, 176) , rgb(207, 149, 87)); 
+    background-clip: text;
+    color: transparent;
+    animation: moveLogo 10s infinite linear;
+}
+
+ul li a{
+    margin-inline: 10px;
+    font-family: cursive;
+    &:hover{
+        text-shadow: 2px 1px 5px rgb(12, 139, 235);
+    }
+    &:active{
+        color: var(--main_color) !important;
+    }
+}
+
+@keyframes moveLogo{
+    0%{
+        background-position: -300px 0px ;
+    }
+    100%{
+        background-position: 300px 0px;
+    }
+}
